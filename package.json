@@ -21,7 +21,16 @@
     "adonis-framework": "^3.0.10",
     "adonis-lucid": "^3.0.14",
     "adonis-middleware": "^1.0.11",
+    "adonis-mongorito": "0.0.2",
+    "adonis-scheduler": "^2.1.2",
+    "adonis-validation-provider": "^3.0.5",
     "adonis-websocket": "^1.0.3",
+    "co": "^4.6.0",
+    "moment": "^2.18.1",
+    "mysql": "^2.13.0",
+    "node-cron": "^1.1.3",
+    "request": "^2.81.0",
+    "scrape-it": "^3.3.2",
     "youch": "^2.0.4"
   },
   "standard": {

@@ -15,6 +15,20 @@
 | Route.resource('user', 'UserController')
 */
 
-const Route = use('Route')
 
-Route.on('/').render('welcome')
+const Route = use('Route')
+Route.get('/', 'HomeController.index')
+Route.get('/loaderio-6903aed1b486387ac31b1e92971901ab.txt', 'HomeController.loaderIOverification')
+
+/*
+ |--------------------------------------------------------------------------
+ | Api v1
+ |--------------------------------------------------------------------------
+ */
+Route.group('apiv1', function () {
+    Route.get('/latest', 'ApiV1Controller.latest')
+    Route.get('/get/:from/:to/:date?', 'ApiV1Controller.convert')
+}).prefix('api/v1');
+
+
+
